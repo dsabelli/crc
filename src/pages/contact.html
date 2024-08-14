@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head section contains meta tags, link to stylesheet, and the title of the webpage -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+    <script src="../scripts/footer.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <title>Country Rock Concrete</title>
+  </head>
+  <!-- Body section contains the main content of the webpage -->
+  <body>
+    <app-navbar></app-navbar>
+    <!-- Navigation bar with links to different pages -->
+
+    <!-- Main content area with hero section and personal introduction -->
+    <main class="w-full flex flex-col justify-start items-center md:mb-24">
+      <h1 class="h1">Contact us</h1>
+      <div
+        class="w-full flex flex-col py-8 md:gap-12 md:flex-row justify-around"
+      >
+        <aside
+          class="w-full p-4 md:w-1/2 flex flex-col items-center md:items-end"
+        >
+          <div class="w-full max-w-xs flex flex-col gap-4 md:gap-12">
+            <div>
+              <h2 class="text-3xl mb-4">
+                Ready to transform your outdoor space?
+              </h2>
+              <p class="text-lg">
+                Get a <strong>FREE</strong> quote for your next concrete
+                project. Simply fill out our contact form and one of our
+                concrete experts will get back to you promptly. Whether you're
+                dreaming of a new driveway, patio, or pool deck, we're here to
+                bring your vision to life.
+              </p>
+            </div>
+            <div>
+              <h2 id="areas-served" class="text-3xl mb-4">Areas we serve:</h2>
+              <ul class="w-full max-w-xs text-lg">
+                <li>Elgin county</li>
+                <li>Middlesex county</li>
+                <li>Norfolk county</li>
+                <li>Kent county</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <section
+          class="w-full md:w-1/2 flex justify-center md:justify-start items-center"
+        >
+          <app-form></app-form>
+        </section>
+      </div>
+    </main>
+    <!-- Footer section with social media icons and email link -->
+    <app-footer></app-footer>
+  </body>
+</html>
+<style>
+  ul li {
+    font-size: 1.2rem;
+  }
+</style>
