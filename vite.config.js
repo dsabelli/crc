@@ -6,5 +6,6 @@ export default defineConfig({
         app: "./src/pages/index.html",
       },
     },
+    outDir: "..",
   },
 });
