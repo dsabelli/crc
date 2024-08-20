@@ -16,7 +16,7 @@
 
     (function () {
       emailjs.init({
-        publicKey: process.env.EMAILJS_API_KEY,
+        publicKey: import.meta.env.VITE_EMAILJS_API_KEY,
       });
     })();
 
