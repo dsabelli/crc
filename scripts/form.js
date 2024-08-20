@@ -14,13 +14,9 @@
     const template = document.createElement("template");
     template.innerHTML = htmlContent;
 
-    // Fetch API key from Netlify function
-    const apiKeyResponse = await fetch("../../netlify/functions/getApiKey.js");
-    const apiKeyData = await apiKeyResponse.json();
-    const apiKey = apiKeyData.apiKey;
     (function () {
       emailjs.init({
-        publicKey: apiKey,
+        publicKey: process.env.EMAILJS_API_KEY,
       });
     })();
 
