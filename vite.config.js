@@ -11,6 +11,7 @@ export default defineConfig({
         colours: resolve(__dirname, "colours.html"),
         about: resolve(__dirname, "about.html"),
         contact: resolve(__dirname, "contact.html"),
+        404: resolve(__dirname, "404.html"),
       },
     },
   },
