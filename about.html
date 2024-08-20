@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/output.css" />
-    <script src="../scripts/navbar.js" defer></script>
-    <script src="../scripts/cardLeft.js" defer></script>
-    <script src="../scripts/cardRight.js" defer></script>
-    <script src="../scripts/footer.js" defer></script>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <script src="./scripts/navbar.js" type="module"></script>
+    <script src="./scripts/cardLeft.js" type="module"></script>
+    <script src="./scripts/cardRight.js" type="module"></script>
+    <script src="./scripts/footer.js" type="module"></script>
     <title>Country Rock Concrete | About</title>
   </head>
   <!-- Body section contains the main content of the webpage -->
@@ -22,9 +22,9 @@
         <h1 class="text-center h1">About us</h1>
         <img
           class="lg:float-left pr-8 max-w-xl mx-auto hidden lg:block"
-          src="../../images/about-us.jpg"
+          src="./images/about-us.jpg"
         />
-        <img class="w-full lg:hidden" src="../../images/about-us-mobile.jpg" />
+        <img class="w-full lg:hidden" src="./images/about-us-mobile.jpg" />
         <div class="mx-auto p-8">
           <h2 class="text-4xl mb-2">Who we are</h2>
           <p>
@@ -141,13 +141,13 @@
   for (i = 0; i < images.length; i++) {
     imgGrid.innerHTML += `    
    <div class="image-card-container" onclick="my_modal_${i}.showModal()">
-      <img class="image-card" src=../../images/${images[i]}>
+      <img class="image-card" src=./images/${images[i]}>
    </div>
    <dialog id="my_modal_${i}" class="modal modal-bottom sm:modal-middle">
     <div class="modal-box !max-w-3xl">
       <form method="dialog">
         <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-      <img class="p-6 " src=../../images/${images[i]}> 
+      <img class="p-6 " src=./images/${images[i]}> 
       </form>
     </div>
   </dialog>

@@ -1,0 +1,96 @@
+<style>
+  label {
+    margin: 0.75rem 0 0.25rem 0;
+    font-size: 1.2rem;
+  }
+</style>
+
+<form
+  class="bg-base-300 flex flex-col w-full px-8 py-8 rounded-xl"
+  name="contact-form"
+  id="contact-form"
+  method="post"
+>
+  <!-- Form fields for user input -->
+  <!-- service select dropdown -->
+  <label class="required" for="service">Service:</label>
+  <select
+    class="select text-lg border-2 w-full max-w-xl min-w-64 md:min-w-80"
+    id="service"
+    name="service"
+    required
+  >
+    <option value="" selected disabled hidden>Select an option</option>
+    <option value="pad">Concrete pads</option>
+    <option value="driveway">Driveways</option>
+    <option value="walkway">Walkways</option>
+    <option value="patio">Patios</option>
+    <option value="pool">Pool decks</option>
+    <option value="foundation">Foundations</option>
+    <option value="cutting">Concrete cutting</option>
+    <option value="sealing">Concrete sealing</option>
+    <option value="maintenance">Maintenance</option>
+    <!-- Other options -->
+  </select>
+  <label class="required" for="firstName">First Name:</label>
+  <input
+    class="input text-lg input-bordered border-2 w-full max-w-xl min-w-64 md:min-w-80 valid:input-success"
+    type="text"
+    id="firstName"
+    name="firstName"
+    required
+    title="Please enter your first name."
+    placeholder=" "
+  />
+  <label class="required" for="lastName">Last Name:</label>
+  <input
+    class="input text-lg input-bordered border-2 w-full max-w-xl min-w-64 md:min-w-80"
+    type="text"
+    id="lastName"
+    name="lastName"
+    required
+    title="Please enter your last name."
+    placeholder=" "
+  />
+  <label class="required" for="address">Address:</label>
+  <input
+    class="input text-lg input-bordered border-2 w-full max-w-xl min-w-64 md:min-w-80"
+    type="text"
+    id="address"
+    name="address"
+    required
+    title="Please enter your address."
+    placeholder=" "
+  />
+
+  <label class="required" for="phone">Phone Number:</label>
+  <input
+    class="input text-lg input-bordered border-2 w-full max-w-xl min-w-64 md:min-w-80"
+    type="tel"
+    id="phone"
+    name="phone"
+    required
+    title="123-456-7890 or 123 456-7890"
+    placeholder=" "
+    pattern="^\(?[0-9]{3}\)?-?[0-9]{3}-?[0-9]{4}|\(?[0-9]{3}\)?\s?[0-9]{3}-?[0-9]{4}$"
+  />
+  <!-- Pattern for phone number validation -->
+
+  <!--Message text area -->
+  <label for="message">Message:</label>
+  <textarea
+    class="textarea textarea-bordered w-full max-w-xl min-w-64 md:min-w-80"
+    id="message"
+    name="message"
+  ></textarea>
+  <!-- Form submission and reset buttons -->
+  <div class="w-full flex justify-center my-8">
+    <button
+      class="btn btn-lg btn-primary w-3/4"
+      type="submit"
+      name="submitButton"
+    >
+      GET QUOTE
+    </button>
+  </div>
+</form>

@@ -1,0 +1,77 @@
+<style></style>
+<div class="flex">
+  <div id="logo-nav"></div>
+  <nav class="navbar bg-base-200">
+    <div class="navbar lg:w-fit">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar hidden lg:w-full lg:flex lg:navbar-end">
+      <ul class="menu menu-lg menu-horizontal px-1">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <div class="dropdown dropdown-hover">
+          <li>
+            <div tabindex="0">
+              <a href="./services.html">Services</a>
+              <img src="../../icons/chevron-down.svg" />
+            </div>
+          </li>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu bg-base-100 rounded-box z-[1] min-w-64 p-2 shadow text-lg"
+          >
+            <li>
+              <a href="./services.html#service-1">Concrete pads</a>
+            </li>
+            <li><a href="./services.html#service-2">Driveways</a></li>
+            <li><a href="./services.html#service-3">Walkways</a></li>
+            <li><a href="./services.html#service-4">Patios</a></li>
+            <li><a href="./services.html#service-5">Pool decks</a></li>
+            <li><a href="./services.html#service-6">Foundations</a></li>
+            <li>
+              <a href="./services.html#service-7">Concrete cutting</a>
+            </li>
+            <li>
+              <a href="./services.html#service-8">Concrete sealing</a>
+            </li>
+            <li><a href="./services.html#service-9">Maintenance</a></li>
+          </ul>
+        </div>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="lg:flex">
+        <a href="./contact.html" class="btn btn-primary text-lg">Free Quote</a>
+      </button>
+    </div>
+    <button class="navbar-end lg:hidden">
+      <a href="./contact.html" class="btn btn-primary text-lg">Free Quote</a>
+    </button>
+  </nav>
+</div>
